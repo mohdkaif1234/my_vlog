@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/my_vlog/static/css/main.01405c37.css",
+    "main.js": "/my_vlog/static/js/main.3659ad5d.js",
+    "static/js/453.e96d938d.chunk.js": "/my_vlog/static/js/453.e96d938d.chunk.js",
+    "static/media/share.png": "/my_vlog/static/media/share.170e9b16fb0af982b05f.png",
+    "static/media/instagram.png": "/my_vlog/static/media/instagram.77fb9ecb1865c8440c29.png",
+    "static/media/facebook.png": "/my_vlog/static/media/facebook.3e6c1cf98a0283beb3c5.png",
+    "static/media/twitter.png": "/my_vlog/static/media/twitter.ff7a49c153e855e9d9c9.png",
+    "static/media/R.jpg": "/my_vlog/static/media/R.414b7c8025693015e8a3.jpg",
+    "index.html": "/my_vlog/index.html",
+    "main.01405c37.css.map": "/my_vlog/static/css/main.01405c37.css.map",
+    "main.3659ad5d.js.map": "/my_vlog/static/js/main.3659ad5d.js.map",
+    "453.e96d938d.chunk.js.map": "/my_vlog/static/js/453.e96d938d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01405c37.css",
+    "static/js/main.3659ad5d.js"
+  ]
+}
