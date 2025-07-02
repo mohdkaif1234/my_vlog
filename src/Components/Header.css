@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Container */
+.header-nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Header */
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: rgb(195, 149, 149);
+    padding: 0 20px;
+    border-radius: 0;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.brand-logo p {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 20px;
+    color: black;
+    margin-right: 5px;
+}
+
+.brand-logo .siren {
+    font-size: 40px;
+    color: black;
+}
+
+/* Navigation Menu */
+.nav, .nav2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav a, .nav2 a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.nav a:hover, .nav2 a:hover {
+    color: white;
+    background: rgb(195, 0, 0);
+}
+
+/* Hamburger Menu */
+.hamber {
+    display: none;
+    cursor: pointer;
+}
+
+.hamber img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Get Started Button */
+.started {
+    padding: 10px 20px;
+    color: aqua;
+    text-align: center;
+    border: 2px solid aqua;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.started:hover {
+    background: aqua;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav2 {
+        display: none;
+    }
+
+    .hamber {
+        display: block;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .nav.open {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav a {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,333 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Small Card Container */
+  .smallCard-containeer {
+    box-sizing: border-box;
+    width: 450px;
+    border: 2px solid red;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Back Button Styles */
+  .backWeb {
+    padding: 10px;
+    display: inline-block;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .backWeb:hover {
+    box-shadow: 0px 5px 4px red;
+    text-shadow: 2px 2px gray;
+  }
+  
+  /* Header Styles */
+  .header2Parent {
+    width: 80vw;
+    margin-left: 150px;
+    position: fixed;
+    z-index: 1;
+    align-self: center;
+    box-shadow: 0px 2px 1px rgb(236, 210, 207);
+    background: white;
+    border-bottom: 1px solid rgb(228, 34, 34);
+  }
+  
+  .small-social {
+    display: flex;
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    justify-content: space-between;
+  }
+  
+  /* Details Layout */
+  .details-parent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -8px;
+    height: 1000px;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+  }
+  
+  .data1-singlepage {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+    text-align: start;
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  
+  .smallcard-userdata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    padding: 30px 5px 10px 5px;
+    box-sizing: border-box;
+  }
+  
+  .singlepage-img {
+    height: 450px;
+    width: 450px;
+  }
+  
+  .bg {
+    background-size: cover;
+    background-position: center;
+    margin: 1px;
+  }
+  
+  .smallcard-img1 {
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    background-position: center;
+    margin: 1px;
+  }
+  
+  .smallcard-persion-img {
+    height: 64px;
+    width: 64px;
+  }
+  
+  /* Fixed Positioned Elements */
+  .fixed-parent {
+    height: 70px;
+    width: 180px;
+    position: fixed;
+    top: 60vh;
+    left: 15%;
+    background-color: white;
+    z-index: -100;
+    display: flex;
+    align-items: center;
+  }
+  
+  .fixed-sub {
+    display: flex;
+    margin: 5px;
+    text-align: center;
+  }
+  
+  .fixed-img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+  }
+  
+  .language {
+    display: flex;
+    height: 60px;
+    align-self: flex-start;
+    box-sizing: border-box;
+  }
+  
+  .bt-language {
+    padding: 4px 6px;
+    background-color: rgb(202, 190, 190);
+    margin: 8px;
+    border: 0;
+  }
+  
+  /* Heading Styles */
+  .heading {
+    color: black;
+    font-weight: 900;
+    margin-top: 320px;
+  }
+  
+  /* Additional Layouts */
+  .clap-counts {
+    align-self: flex-start;
+  }
+  
+  .write-name {
+    font-size: 12px;
+    margin: 0px;
+  }
+  
+  .write-data {
+    padding-top: 15px;
+    margin: 0px;
+  }
+  
+  .more-serin {
+    background-color: rgba(52, 44, 44, 0.046);
+    height: 530px;
+    margin-top: 270px;
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .more-heading {
+    align-self: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 150px;
+  }
+  
+  .related {
+    align-self: flex-start;
+    margin-left: -200px;
+    margin-bottom: 7px;
+  }
+  
+  .more-one {
+    width: 98vw;
+    display: flex;
+    padding: 0px 10vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .more-dev {
+    width: 100%;
+    padding-left: 20px;
+  }
+  
+  .more-main-title {
+    align-self: flex-start;
+  }
+  
+  .more-parent {
+    display: flex;
+  }
+  
+  /* Media Queries for Mobile Devices */
+  @media (min-width: 270px) and (max-width: 580px) {
+    .header2Parent {
+      width: 100%;
+      margin: 0;
+      margin-top: 200px;
+      height: 113px;
+      padding: 0;
+    }
+  
+    .details-parent {
+      width: 90vw;
+      margin-top: -200px;
+      padding: 4px;
+      margin-left: 10px;
+    }
+  
+    .smallCard-containeer {
+      width: 95vw;
+      border: none;
+      flex-direction: column-reverse;
+      margin-top: 50px;
+      align-self: flex-end;
+      margin-right: -50px;
+    }
+  
+    .fixed-parent {
+      display: none;
+      position: static;
+    }
+  
+    .heading {
+      margin-top: 615px;
+      width: 90vw;
+      margin-bottom: -10px;
+      font-size: 1.6em;
+    }
+  
+    .small-social {
+      display: flex;
+      height: 80px;
+      width: 120px;
+      margin-left: -50px;
+      padding: 10px 0px;
+      justify-content: space-between;
+    }
+  
+    .singlepage-img {
+      height: 300px;
+      width: 350px;
+      margin-right: -10px;
+    }
+  
+    .more-one {
+      flex-direction: column;
+      height: 350px;
+      background-color: white;
+    }
+  
+    .more-serin {
+      background-color: white;
+    }
+  
+    .language {
+      align-self: center;
+    }
+  
+    .fixed-sub {
+      margin-left: -70px;
+      justify-content: flex-start;
+      text-align: left;
+    }
+  
+    .smallcard-parent {
+      margin-left: 30px;
+      margin-top: -20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .writer-respo {
+      margin-left: -100px;
+      margin-top: -30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .res-diveder {
+      border: 5px solid red;
+    }
+  
+    .goBack {
+      display: inline-block;
+      padding: 5px 25px;
+      font-size: 24px;
+      background-color: black;
+      color: white;
+      font-weight: 800;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      margin-top: 950px;
+    }
+  
+    .backWeb {
+      display: none;
+    }
+  
+    .goBack:hover {
+      box-shadow: 0px 5px 4px red;
+      text-shadow: 2px 2px gray;
+    }
+  }
